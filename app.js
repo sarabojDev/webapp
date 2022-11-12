@@ -1,21 +1,4 @@
-(function(){
-    Notification.requestPermission();
-    console.log("dsfasdfsd")
-    re()
-})()
 
-function re(){
-   const notify =  new Notification("Welcome Notification",{
-    body:"Hi this sidharth software",
-    data:{name:"saraboj",age:3434}
-   });
-   notify.addEventListener("click",e =>{
-    console.log("click",e)
-   })
-   notify.addEventListener("close",e =>{
-    console.log("close",e)
-   })
-}
   //*common functions start 
    function checkPreDate(e) {
         var q = new Date();
