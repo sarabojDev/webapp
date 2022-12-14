@@ -1,0 +1,138 @@
+:root {
+    --menu-width: 100%; /* Width of menu */
+    --items: 4; /* Number of items you have */
+    --item-width: calc(var(--menu-width) / var(--items));
+    --main-lite:rgb(28, 179, 28);
+    --main-color: #0fb451;
+    --main-color-dark: #08a148;
+    --main-color-light: #40af6c;
+    --text-color: #cfcde7;
+  }
+
+/* update */
+#coverPage {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: #292020b8;
+    top: 0;
+    z-index: 9999;
+}
+
+#homeCloader:before {
+    content: "";
+    width: 30%;
+    height: 5px;
+    background: #fefefe;
+    border-radius: 10px;
+    position: fixed;
+    box-shadow: rgb(0 0 0 / 40%) 0px 2px 4px, rgb(0 0 0 / 30%) 0px 7px 13px -3px, rgb(0 0 0 / 20%) 0px -3px 0px inset;
+    top: 0;
+    z-index: 10000;
+    overflow: hidden;
+    animation-name: loader_ani;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes loader_ani {
+	from {
+		transform: translateX(-100%)
+	}
+
+	to {
+		transform: translateX(400%)
+	}
+}
+
+
+
+/* common loader design */
+.commonLoader {
+    box-sizing: border-box;
+    display: inline-block;
+    width: 50px;
+    height: 80px;
+    border-top: 5px solid #fff;
+    border-bottom: 5px solid #fff;
+    position: relative;
+    background: linear-gradient(var(--main-color-light) 30px, transparent 0) no-repeat;
+    background-size: 2px 40px;
+    background-position: 50% 0px;
+    animation: spinx 5s linear infinite;
+  }
+  .commonLoader:before, .commonLoader:after {
+    content: "";
+    width: 40px;
+    left: 50%;
+    height: 35px;
+    position: absolute;
+    top: 0;
+    transform: translatex(-50%);
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 0 0 20px 20px;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: 0 0px;
+    animation: lqt 5s linear infinite;
+  }
+  .commonLoader:after {
+    top: auto;
+    bottom: 0;
+    border-radius: 20px 20px 0 0;
+    animation: lqb 5s linear infinite;
+  }
+  @keyframes lqt {
+    0%, 100% {
+      background-image: linear-gradient(var(--main-color-light) 40px, transparent 0);
+      background-position: 0% 0px;
+    }
+    50% {
+      background-image: linear-gradient(var(--main-color-light) 40px, transparent 0);
+      background-position: 0% 40px;
+    }
+    50.1% {
+      background-image: linear-gradient(var(--main-color-light) 40px, transparent 0);
+      background-position: 0% -40px;
+    }
+  }
+  @keyframes lqb {
+    0% {
+      background-image: linear-gradient(var(--main-color-light) 40px, transparent 0);
+      background-position: 0 40px;
+    }
+    100% {
+      background-image: linear-gradient(var(--main-color-light) 40px, transparent 0);
+      background-position: 0 -40px;
+    }
+  }
+  @keyframes spinx {
+    0%, 49% {
+      transform: rotate(0deg);
+      background-position: 50% 36px;
+    }
+    51%, 98% {
+      transform: rotate(180deg);
+      background-position: 50% 4px;
+    }
+    100% {
+      transform: rotate(360deg);
+      background-position: 50% 36px;
+    }
+  }
+      
+
+  .loader_cImga{
+    width: 100%;
+    height: 100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+  }
+/* common loader design */
+
+
+.custom-file-input:focus, .custom-select:focus, .form-control:focus{
+    border: 1px solid var(--main-color-dark);
+}
