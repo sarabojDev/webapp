@@ -1,0 +1,148 @@
+<div class="xs-pd-20-10 pd-ltr-20">
+    <div class="page-header">
+        <div class="row">
+            <div class="col-6">
+                <div class="title">
+                    <h4><i class="icon-copy dw dw-notepad"></i><span class="mx-2">Task</span></h4>
+                </div>
+            </div>
+            <div class="col-6 d-flex justify-content-end ">
+                <i class="fa fa-arrow-right"></i>
+            </div>
+        </div>
+    </div>
+    <div class="row clearfix progress-box">
+        <div class="col-lg-3 col-md-6 col-sm-12 mb-30">
+            <div class="card-box pd-30 height-100-p">
+                <div class="progress-box text-center">
+                    <h4 class="text-dark task_pending_count" >0</h4>
+                    <h5 class="text-dark padding-top-10 h5">Pending Task</h5>
+                    <button onclick="move_to_task()" type="button" class="btn" data-bgcolor="#00b489" data-color="#ffffff"
+                        style="color: rgb(255, 255, 255); background-color: rgb(0, 180, 137);" >
+                        <i class="fa fa-sign-in"></i><span class="mx-2">Open</span></button>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 mb-30">
+            <div class="card-box pd-30 height-100-p">
+                <div class="progress-box text-center">
+                    <h4 class="text-dark task_scheduling_count" >0</h4>
+                    <h5 class="text-dark padding-top-10 h5">
+                        Scheduling Task
+                    </h5>
+                    <button  onclick="move_to_task()" type="button" class="btn" data-bgcolor="#00b489" data-color="#ffffff"
+                        style="color: rgb(255, 255, 255); background-color: rgb(0, 180, 137);">
+                        <i class="fa fa-sign-in"></i><span class="mx-2" >Open</span></button>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 mb-30">
+            <div class="card-box pd-30 height-100-p">
+                <div class="progress-box text-center">
+                    <h4 class="text-dark task_awaiting_approval_count">0</h4>
+                    <h5 class="text-dark padding-top-10 h5">
+                        Awaiting Approval Task
+                    </h5>
+                    <button  onclick="move_to_task()" type="button" class="btn" data-bgcolor="#00b489" data-color="#ffffff"
+                        style="color: rgb(255, 255, 255); background-color: rgb(0, 180, 137);">
+                        <i class="fa fa-sign-in"></i><span class="mx-2">Open</span></button>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 mb-30">
+            <div class="card-box pd-30 height-100-p">
+                <div class="progress-box text-center">
+                    <h4 class="text-dark task_completed_count" >0</h4>
+                    <h5 class="text-dark padding-top-10 h5">
+                        Completed Task
+                    </h5>
+                    <button  onclick="move_to_task()" type="button" class="btn" data-bgcolor="#00b489" data-color="#ffffff"
+                        style="color: rgb(255, 255, 255); background-color: rgb(0, 180, 137);">
+                        <i class="fa fa-sign-in"></i><span class="mx-2">Open</span></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="page-header">
+        <div class="row">
+            <div class="col-6">
+                <div class="title">
+                    <h4><i class="icon-copy dw dw-polaroids"></i><span class="mx-2">Ticket</span></h4>
+                </div>
+            </div>
+            <div class="col-6 d-flex justify-content-end ">
+                <div class="col-6 d-flex justify-content-end ">
+                    <i class="fa fa-arrow-right"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row clearfix progress-box">
+        <div class="col-lg-3 col-md-6 col-sm-12 mb-30">
+            <div class="card-box pd-30 height-100-p">
+                <div class="progress-box text-center">
+                    <h4 class="text-dark">0</h4>
+                    <h5 class="text-dark padding-top-10 h5">Pending Ticket</h5>
+                    <button type="button" class="btn" data-bgcolor="#00b489" data-color="#ffffff"
+                        style="color: rgb(255, 255, 255); background-color: rgb(0, 180, 137);">
+                        <i class="fa fa-sign-in"></i><span class="mx-2">Open</span></button>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 mb-30">
+            <div class="card-box pd-30 height-100-p">
+                <div class="progress-box text-center">
+                    <h4 class="text-dark">0</h4>
+                    <h5 class="text-darkpadding-top-10 h5">
+                        Scheduling Ticket
+                    </h5>
+                    <button type="button" class="btn" data-bgcolor="#00b489" data-color="#ffffff"
+                        style="color: rgb(255, 255, 255); background-color: rgb(0, 180, 137);">
+                        <i class="fa fa-sign-in"></i><span class="mx-2">Open</span></button>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 mb-30">
+            <div class="card-box pd-30 height-100-p">
+                <div class="progress-box text-center">
+                    <h4 class="text-dark">0</h4>
+                    <h5 class="text-dark padding-top-10 h5">
+                        Awaiting Approval Ticket
+                    </h5>
+                    <button type="button" class="btn" data-bgcolor="#00b489" data-color="#ffffff"
+                        style="color: rgb(255, 255, 255); background-color: rgb(0, 180, 137);">
+                        <i class="fa fa-sign-in"></i><span class="mx-2">Open</span></button>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 mb-30">
+            <div class="card-box pd-30 height-100-p">
+                <div class="progress-box text-center">
+                    <h4 class="text-dark">0</h4>
+                    <h5 class="text-dark padding-top-10 h5">
+                        Completed Ticket
+                    </h5>
+                    <button type="button" class="btn" data-bgcolor="#00b489" data-color="#ffffff"
+                        style="color: rgb(255, 255, 255); background-color: rgb(0, 180, 137);">
+                        <i class="fa fa-sign-in"></i><span class="mx-2">Open</span></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-12 mb-30">
+            <div class="card-box pd-30 pt-10 height-100-p">
+                <h2 class="mb-30 h4">Taks Overview</h2>
+                <div  style="width: 100% !important;overflow-y: hidden;" class="d-flex align-items-center justify-content-center" id="task_chart_tag"><h4>No Record
+                </h4></div>
+            </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12 mb-30">
+            <div class="card-box pd-30 pt-10 height-100-p">
+                <h2 class="mb-30 h4">Ticket Overiview</h2>
+                <div  style="width: 100% !important;overflow-y: hidden;" class="d-flex align-items-center justify-content-center" id=""><h4>No Record
+                </h4></div>
+            </div>
+        </div>
+    </div>
+</div>
